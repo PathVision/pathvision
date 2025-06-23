@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Pathvision</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="contact us.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="container header">
+            <div class="logo">
+                <img src="images/logo.png" alt="PathVision Logo" />
+            </div>
+            <div class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="main-nav">
+                <a href="Index.html">Home</a>
+                <a href="About us.html">About Us</a>
+
+                <div class="dropdown">
+                    <span class="dropbtn">
+                        <p>Products/Solutions <img src="images/dropdown.png.png" alt=""></p>
+                    </span>
+                    <div class="dropdown-content">
+                        <a href="Agripulse.html">AgriPulse-360</a>
+                        <a href="idas.html">IMAS</a>
+                    </div>
+                </div>
+
+                <a href="contact us.html">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="contact-section" style="padding-top: 100px;">
+        <div class="container">
+            <h1>Contact us</h1>
+            <div class="contact-content">
+                <div class="map-container">
+                    <div class="location-selector">
+                        <select id="locationSelect">
+                            <option value="headquarter">Registered Address</option>
+                            <option value="operating">Business Address</option>
+                        </select>
+                    </div>
+
+                    <iframe id="mapFrame"
+                        src="https://www.google.com/maps?q=Srinivasa+Nagar,+Proddatur,+Andhra+Pradesh+516360,+IN&output=embed"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+
+
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Registered Address</h3>
+                            <p>Srinivasa Nagar,</p>
+                            <p>Proddatur, Andhra Pradesh,</p>
+                            <p>516360, IN</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Business Address</h3>
+                            <p>Gitam University</p>
+                            <p>Bengaluru, Karnataka,</p>
+                            <p>561203, IN</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone Number</h3>
+                            <p>+91 1234567890</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>pathvision@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-card">
+                    <h2>We'd love to hear from you</h2>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="phone" placeholder="Enter your Phone number">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Enter your Email" required>
+                        </div>
+                        <div class="form-group message-group">
+                            <textarea id="message" placeholder="Enter your message" rows="9"></textarea>
+                        </div>
+                        <button type="submit" class="send-message-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-left">
+            <img src="images/logo.png" alt="PathVision Logo" class="footer-logo" />
+            <div class="social-icons">
+                <a href="#" class="social"><img src="images/linkedin.png" alt="LinkedIn" /></a>
+                <a href="#" class="social"><img src="images/twitter.png" alt="Twitter" /></a>
+                <a href="#" class="social"><img src="images/instagram.png" alt="Instagram" /></a>
+                <a href="#" class="social"><img src="images/facebook.png" alt="Facebook" /></a>
+            </div>
+        </div>
+
+        <div class="footer-right">
+            <div class="contact-items">
+                <div class="contact-item">
+                    <div class="icon-circle"><img src="images/phone-call.png" alt="Call Icon" /></div>
+                    <div>
+                        <strong>Call Us</strong><br />
+                        +91 1234567890
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="icon-circle"><img src="images/email.png" alt="Mail Icon" /></div>
+                    <div>
+                        <strong>Mail us</strong><br />
+                        pathvision@gmail.com
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="icon-circle"><img src="images/Location.png" alt="Location Icon" /></div>
+                    <div>
+                        <strong>Find us</strong><br />
+                        Srinivasa Nagar,<br />
+                        Proddatur, Andhra Pradesh<br />
+                        516360, IN
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="contactus.js"></script>
+</body>
+
+</html>
